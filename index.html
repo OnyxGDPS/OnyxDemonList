@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Onyx Demon List</title>
+   <link rel="icon" href="favicon.ico" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" type="text/css" href="./styles/components/nav.css" />
+   <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+   <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.prod.js"></script>
+</head>
+<body id="app">
+    <header>
+        <nav class="nav">
+            <a href="/" class="nav__logo">ODL</a>
+            
+            <div class="nav__center">
+                <div class="nav__dropdown">
+                    <a class="nav__tab" href="#" onclick="return false;">Lists</a>
+                    <div class="dropdown__content">
+                        <a href="/lists/classic">Classic Demon List</a>
+                        <a href="/lists/platformer">Platformer Demon List</a>
+                        <a href="/lists/challenge">Challenge List</a>
+                        <a href="/lists/impossible">Impossible Demon List</a>
+                    </div>
+                </div>
+                
+                <router-link class="nav__tab" to="/leaderboard">Leaderboard</router-link>
+            </div>
+
+            <div class="nav__actions">
+                <a class="nav__icon" href="https://discord.gg/PwWATs3F44" title="Join our Discord">
+                    <img src="./assets/icons/discord.svg" alt="Discord" />
+                </a>
+            </div>
+        </nav>
+    </header>
+    <router-view></router-view>
+    <footer></footer>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
