@@ -1,0 +1,32 @@
+@import 'variables';
+@import 'mixins';
+
+.navbar {
+    background-color: $dark-purple;
+    color: $white;
+    padding: 1rem;
+
+    .navbar-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .navbar-links {
+        @include flex-center;
+        gap: 1rem;
+
+        a {
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .discord-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'mixins';
+
+.level-detail {
+    background-color: $dark-gray;
+    color: $white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+
+    .records {
+        margin-top: 1rem;
+
+        .record {
+            margin-bottom: 1rem;
+
+            a {
+                color: $white;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'mixins';
+
+.leaderboard-page {
+    padding: 2rem;
+    color: $white;
+
+    .filters {
+        @include flex-center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        button {
+            background-color: $dark-purple;
+            color: $white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: lighten($dark-purple, 10%);
+            }
+        }
+    }
+}

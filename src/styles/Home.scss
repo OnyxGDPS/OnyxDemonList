@@ -1,0 +1,8 @@
+@import 'variables';
+@import 'mixins';
+
+.home {
+    color: $white;
+    text-align: center;
+    padding: 2rem;
+}
